@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game</title>
+    <script src="https://kit.fontawesome.com/9fb0838f24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <div class="iphone-frame">
+        <img id="frame" class="frame" src="img/iphone-frame.png">
+
+        <div id="page1">
+            <div class="main"></div>
+
+            <div class="netflix">
+                <img class="netflix" src="img/netflixserie.png">
+            </div>
+
+            <div class="logo">
+                <img class="logo" src="img/logo.png">
+            </div>
+
+            <div class="staff">
+                <img class="staff" src="img/staff.png">
+            </div>
+
+            <div id="fade" class="fade hidden"></div>
+
+            <div class="main-button">
+                <button onclick="animOpening()" id="button-start" type="button" class="main-button"><pp id="text">Participer</pp></button>
+            </div>
+
+            <div id="anim-opening" class="anim">
+                <div id="popup" class="hidden">
+                    <div class="msg">
+                        <center><p><b>Êtes-vous sûr de vouloir participer à l'expérience Squid Game ?</b></p></center>
+                    </div>
+                    <button class="valid-button btnv1" type="button" onclick="participate()">Oui</button>
+                    <button class="valid-button btnv2" type="button">Non</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="main2"></div>
+
+            <div class="shapes">
+                <img class="shapes" src="img/shapes.png">
+            </div>
+
+            <div class="netflix">
+                <img class="netflix" src="img/netflixserie.png">
+            </div>
+
+            <div class="logo">
+                <img class="logo" src="img/logo.png">
+            </div>
+
+            <div id="episodes" class="container under">
+                <div onclick="epi1()" class="ep">
+                    <p>Episode 1</p>
+                    <img class="ep" src="img/ep1.jpg">
+                </div>
+                <div class="ep">
+                    <p>Episode 2</p>
+                    <img class="ep" src="img/ep2.jpg">
+                </div>
+                <div class="ep">
+                    <p>Episode 3</p>
+                    <img class="ep" src="img/ep3.jpg">
+                </div>
+                <div class="ep">
+                    <p>Episode 4</p>
+                    <img class="ep" src="img/ep4.jpg">
+                </div>
+                <div class="ep">
+                    <p>Episode 5</p>
+                    <img class="ep" src="img/ep5.jpg">
+                </div>
+            </div>
+
+            <div id="navigation" class="nav under">
+                <div onclick="gotop1()" class="nav-page">
+                    <img class="nav-page" src="img/p1.jfif" width="37">
+                </div>
+                <div class="nav-page">
+                    <img class="nav-page" src="img/p2-clicked.png" width="40">
+                </div>
+                <div onclick="gotop3()" class="nav-page">
+                    <img class="nav-page" src="img/p3.jfif" width="36">
+                </div>
+                <div class="nav-page">
+                    <img class="nav-page" src="img/p4.jfif" width="37">
+                </div>
+            </div>
+
+            <div id="navigation2" class="nav under">
+                <div onclick="gotop1()" class="nav-page">
+                    <img class="nav-page" src="img/p1.jfif" width="37">
+                </div>
+                <div class="nav-page">
+                    <img class="nav-page" src="img/p2.jfif" width="40">
+                </div>
+                <div onclick="gotop3()" class="nav-page">
+                    <img class="nav-page" src="img/p3-clicked.png" width="38">
+                </div>
+                <div onclick="gotop4()" class="nav-page">
+                    <img class="nav-page" src="img/p4.jfif" width="37">
+                </div>
+            </div>
+
+            <div id="navigation3" class="nav under">
+                <div onclick="gotop1()" class="nav-page">
+                    <img class="nav-page" src="img/p1.jfif" width="37">
+                </div>
+                <div class="nav-page">
+                    <img class="nav-page" src="img/p2.jfif" width="40">
+                </div>
+                <div onclick="gotop3()" class="nav-page">
+                    <img class="nav-page" src="img/p3.jfif" width="36">
+                </div>
+                <div onclick="gotop4()" class="nav-page">
+                    <img class="nav-page" src="img/p4-clicked.png" width="39">
+                </div>
+            </div>
+
+            <div id="players" class="players-list under">
+                <div class="players-numbers">
+                    <div>
+                        <img src="img/001.jpg">
+                        <p>001</p>
+                    </div>
+                </div>
+                <div class="players-numbers">
+                    <div onclick="p3()">
+                        <img src="img/067.jpg">
+                        <p>067</p>
+                    </div>
+                </div>
+                <div class="players-numbers">
+                    <div>
+                        <img src="img/101.png">
+                        <p>101</p>
+                    </div>
+                </div>
+                <div class="players-numbers">
+                    <div>
+                        <img src="img/199.jpg">
+                        <p>199</p>
+                    </div>
+                </div>
+                <div class="players-numbers">
+                    <div>
+                        <img src="img/lee.png">
+                        <p>456</p>
+                    </div>
+                </div>
+                <div class="players-numbers">
+                    <div>
+                        <img src="img/sangwoo.jpg">
+                        <p>218</p>
+                    </div>
+                </div>
+                <div class="players-numbers">
+                    <div>
+                        <img src="img/sangwoo.jpg">
+                        <p>218</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="games" class="container under">
+                <div class="ep">
+                    <p>1, 2, 3 soleil...</p>
+                    <img class="ep" src="img/g1.png">
+                </div>
+                <div class="ep">
+                    <p>Tir à la corde</p>
+                    <img class="ep" src="img/g2.png">
+                </div>
+                <div class="ep">
+                    <p>Jeu de billes</p>
+                    <img class="ep" src="img/g3.png">
+                </div>
+                <div onclick="g4()" class="ep">
+                    <p>Honeycomb</p>
+                    <img class="ep" src="img/g4.jpg">
+                </div>
+                <div class="ep">
+                    <p>&nbsp;</p>
+                    <img class="ep" src="img/ep5.jpg">
+                </div>
+            </div>
+
+            <div id="switcher"></div>
+            <div id="switcher2"></div>
+            <div id="switcher3"></div>
+            <div id="switcher4"></div>
+
+
+
+            <div id="honeycomb-opening" class="honeycomb">
+                <div id="honeycomb-popup" class="hidden">
+                    <p class="title-p4">Honeycomb <span onclick="closeHoneycomb()"><i class="fas fa-times"></i></span></p>
+
+                    <center>
+                    <img src="img/honeycomb-game.jpg" width="305">
+                    <div class="msg">
+
+                        <p>
+Au total, 212 participants reçoivent chacun une boîte de conserve de forme circulaire contenant un biscuit en sucre.<br><br>
+
+Ils se composent de l’une des quatre formes différentes : triangle, cercle, étoile ou un parapluie (considéré comme la difficulté la plus élevée).<br><br>
+
+Chaque joueur est invité à découper la forme avec une aiguille, sans fissurer ou casser le biscuit.  Certains lèche le biscuit pour le fragiliser et le rendre plus facile à couper.<br><br></p>
+                    </div>
+                    </center>
+                </div>
+            </div>
+
+            <div id="fade2" class="fade2 hidden"></div>
+            <div id="fade3" class="fade3 hidden"></div>
+            <div id="fade4" class="fade4 hidden"></div>
+
+
+            <div id="epi1-opening" class="epi1">
+                <div id="epi1-popup" class="hidden">
+                    <p class="title-p2">Episode 1<span onclick="closeepi1()"><i class="fas fa-times"></i></span></p>
+
+                    <center>
+                    <video width="310" controls>
+                      <source src="img/game2.mp4" type="video/mp4">
+                   
+                    
+                    </video>
+                    <div class="msg">
+
+                        <p>
+Cet épisode se déroule dans un terrain extérieur clôturé par de hauts murs sur lesquels est peint un ciel bleu.<br><br>
+En face des joueurs, se trouve une poupée géante animatronique.<br>La poupée ressemble à un visage rappelant le visage d'un enfant, une couette, une robe orange avec un haut jaune ainsi que des chaussures noires et un bas blanc.<br><br>
+
+La poupée est dotée d'un système de capteurs détectant les mouvements des joueurs et est reliée à un système de fusil de snipeurs auto.<br><br>
+
+</p>
+                    </div>
+                    </center>
+                </div>
+            </div>
+
+            <div id="p3-opening" class="p3">
+                <div id="p3-popup" class="hidden">
+                    <p class="title-p3">067<span onclick="closep3()"><i class="fas fa-times"></i></span></p>
+
+                    <center>
+                    <img src="img/067-banner.jpg" width="305">
+                    <div class="msg">
+
+                        <p>
+Dans Squid Game, le joueur 067 est Kang Sae-byeok.<br><br> Résistante et pleine de ressources, elle est pour beaucoup l’ultime survivante. Sae-byeok et son jeune frère Cheol ont réussi à quitter la Corée du Nord, mais ils ont dû laisser leur mère derrière eux.<br><br>
+
+Son frère Choel est actuellement placé dans un orphelinat car Sae-byeok ne peut pas subvenir à leurs besoins.<br> Si elle gagne, elle compte utiliser l’argent pour acheter une maison pour sa famille et faire sortir sa mère de Corée du Nord.<br><br>
+Kang Sae-byeok est l’une des trois seules candidates à passer l’épreuve des billes de verre.<br> Cependant, il est révélé qu’elle a été gravement blessée lorsque le pont de verre a explosé.<br> L’un de ses morceaux s’est logé dans son abdomen et elle saigne abondamment.<br><br>
+
+</p>
+                    </div>
+                    </center>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
